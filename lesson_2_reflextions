@@ -1,0 +1,17 @@
+Creating a repository:
+
+You can run git init to create a git repository or convert a non igt repo into git repo. when you create a git repo a  .git file will be created in that directory and will be in hidden state
+
+ls -a : shows all the files including the hidden ones
+
+If you convert non git directory into git directory, by running git init, then you will see a message "Initialized  empty git repository in.. " then if you run git status - it shows the list of untracked files
+
+Staging area:
+
+Prior to adding files into git, files are placed into staging directory from the working directory by using the command "git add filename". This helps us the user to consolidate all the list of changes and then commit at a single time to git, when you run git status, it shows "Changes to be committed and the file name"
+
+git diff : working directory Vs staging area
+git diff --staged : staging vs recent commit
+git diff commit1 commit2 : commit1 vs commit2 in repo
+
+git reset --hard: resets the changes back and any changes made will be lost
