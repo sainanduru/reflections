@@ -1,0 +1,48 @@
+Lesson 1:
+
+It is about GIT and Github;
+Why we should use and how we should use these two.
+GIT is a version control software and GITHUB is a code sharing/collaboration workspace.
+In lesson 1, i have downloaded game_new.js and game_old.js files then used fc command to find the differences in a huge files.
+Note: Windows command prompt has an inbuilt fileCompare mechanism and it is accessed by fc game_old.js game_new.js
+Note: Mac terminal has an inbuilt command called diff and it is used as diff -u game_old.js game_new.js
+I have learned about assigning alias to sublime to invoke it from gitbash directly
+
+echo 'alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"' >> ~/.bashrc
+
+and also learned about creating folders/directories.
+
+cd ~                          # change directories to your home directory
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflections.txt (you can replace subl with another editor here if you prefer a different one)
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+git log (*Author, date, message),
+type-of, part-of, operates on
+
+manual commits;
+
+too-big - more wait time to commit or more lines of code : not advisable
+too-small - commit for any small change : not advisable
+just-right - commit any logical change : advisable
+
+
+git log --stat
+
+git allows saving multiple file sin a single commit as it provides flexibility to commit inter-related files at a same time thereby avoid any mistakes 
+
+git clone urltoclone
+
+we can use gitlog and git diff commands.
+gitlog - It is used to view the log of commits under the parent directory. To scroll down, press the down arrow key
+git diff commitid1 commitid2 - it gives the difference between 2 commits
+
+if we want to go back to working copy of the version, then we have to use checkout. Checkout in GIT refers to going to previous version. However, we will see a message called DETACH HEAD as we moved over to the previous commit that the present commit and made it as an active one.
+
+git checkout commitID
+
+have set default editor to sublime..used alias as subl in bash_profile.
