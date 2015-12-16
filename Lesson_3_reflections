@@ -1,0 +1,5 @@
+Introduction to GitHub - code sharing makes easier;
+Github account is considered as remote and our machine as local.
+From the local project directory; type git remote: to check whether it connected to any git hub repo's or not
+if adding a first repo; then git remote add origin giturl; otherwise, we need to replace origin with remote reponame
+once remote is established, you can push the changes, using git push origin master
